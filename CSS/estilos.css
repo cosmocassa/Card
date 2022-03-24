@@ -18,6 +18,9 @@ html {
 
 body {
   background-color: var(--dark-cyan);
+  background-image: url("../images/bg-pattern-top.svg"), url("../images/bg-pattern-bottom.svg");
+  background-repeat: no-repeat,no-repeat;
+  background-position: right 50vw bottom 50vh,left 50vw top 50vh;
   font-family: 'Kumbh Sans', sans-serif;
 }
 
@@ -39,8 +42,8 @@ body {
   width: 326px;
   border-radius: 16px;
   overflow: hidden;
-  -webkit-box-shadow: 10px 10px 50px rgba(33, 115, 182, 0.205);
-          box-shadow: 10px 10px 50px rgba(33, 115, 182, 0.205);
+  -webkit-box-shadow: 10px 10px 10px rgba(33, 115, 182, 0.205);
+          box-shadow: 10px 10px 10px rgba(33, 115, 182, 0.205);
 }
 
 .card-header {
@@ -59,7 +62,7 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  border-bottom: 1px solid var(--dark-gray);
+  border-bottom: 1px solid rgba(153, 153, 153, 0.425);
 }
 
 .card-body-img {
@@ -90,5 +93,17 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.card-footer-social {
+  text-align: center;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.card-footer-social p {
+  letter-spacing: 1px;
 }
 /*# sourceMappingURL=estilos.css.map */
